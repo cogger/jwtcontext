@@ -1,4 +1,4 @@
-package jwt
+package jwtcontext
 
 import (
 	"net/http"

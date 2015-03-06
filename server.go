@@ -1,4 +1,4 @@
-package jwt
+package jwtcontext
 
 import "golang.org/x/net/context"
 
