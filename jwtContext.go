@@ -35,7 +35,6 @@ func jc(ctx context.Context) jwtContext {
 			}
 			return config.Server.GetClient(ctx, clientID)
 		})
-
 		config.Claims = token.Claims
 		config.Valid = (err == nil && token.Valid)
 	})

@@ -8,5 +8,6 @@ func GetUser(ctx context.Context, dst interface{}) error {
 	if !jwt.Valid {
 		return ErrNotAuthenticated
 	}
+
 	return jwt.Server.GetUser(ctx, jwt.Claims["sub"].(string), dst)
 }
