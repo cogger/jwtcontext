@@ -17,7 +17,7 @@ type jwtContext struct {
 }
 
 func jc(ctx context.Context) jwtContext {
-	config, ok := ctx.Value(jwtContextKey{}).(jwtContext)
+	config, ok := ctx.Value(jwtContextKey{}).(*jwtContext)
 	if !ok {
 		panic(ErrNoJWTContext)
 	}
@@ -39,5 +39,5 @@ func jc(ctx context.Context) jwtContext {
 		config.Valid = (err == nil && token.Valid)
 	})
 
-	return config
+	return *config
 }

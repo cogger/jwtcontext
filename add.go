@@ -13,11 +13,11 @@ type jwtContextKey struct{}
 func Add(server Server) func(context.Context, *http.Request) context.Context {
 	return func(ctx context.Context, req *http.Request) context.Context {
 		auth := req.Header.Get(http.CanonicalHeaderKey("Authorization"))
-
-		return context.WithValue(ctx, jwtContextKey{}, jwtContext{
+		config := jwtContext{
 			Auth:   auth,
 			Server: server,
 			Load:   &sync.Once{},
-		})
+		}
+		return context.WithValue(ctx, jwtContextKey{}, &config)
 	}
 }
