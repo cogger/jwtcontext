@@ -1,6 +1,10 @@
-# jwt [![GoDoc](https://godoc.org/github.com/cogger/jwt?status.png)](http://godoc.org/github.com/cogger/jwt)
+# jwtcontext 
+**Documentation:** [![GoDoc](https://godoc.org/github.com/cogger/jwtcontext?status.png)](http://godoc.org/github.com/cogger/jwtcontext)  
+**Build Status:** [![Build Status](https://travis-ci.org/cogger/jwtcontext.svg?branch=master)](https://travis-ci.org/cogger/jwtcontext)  
+**Test Coverage:** [![Coverage Status](https://coveralls.io/repos/cogger/jwtcontext/badge.svg?branch=master)](https://coveralls.io/r/cogger/jwtcontext?branch=master)
 
-jwt addes the ability to authenticate jwt tokens
+
+jwtcontext addes the ability to authenticate jwt tokens
 
 ## Usage
 ~~~ go
