@@ -1,10 +1,8 @@
 # jwtcontext 
-**Documentation:** [![GoDoc](https://godoc.org/github.com/cogger/jwtcontext?status.png)](http://godoc.org/github.com/cogger/jwtcontext)
-**Build Status:** [![Build Status](https://travis-ci.org/cogger/jwtcontext.svg?branch=master)](https://travis-ci.org/cogger/jwtcontext)
-**Test Coverage:** [![Coverage Status](https://coveralls.io/repos/cogger/jwtcontext/badge.svg?branch=master)](https://coveralls.io/r/cogger/jwtcontext?branch=master)  
-**License:**       [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-
-
+[![GoDoc](https://godoc.org/github.com/cogger/jwtcontext?status.png)](http://godoc.org/github.com/cogger/jwtcontext)
+[![Build Status](https://travis-ci.org/cogger/jwtcontext.svg?branch=master)](https://travis-ci.org/cogger/jwtcontext)
+[![Coverage Status](https://coveralls.io/repos/cogger/jwtcontext/badge.svg?branch=master)](https://coveralls.io/r/cogger/jwtcontext?branch=master)  
+[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 jwtcontext addes the ability to authenticate jwt tokens
 
