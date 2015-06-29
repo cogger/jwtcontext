@@ -1,10 +1,8 @@
-package jwtcontext_test
+package jwtcontext
 
 import (
 	"bytes"
 	"net/http"
-
-	. "github.com/cogger/jwtcontext"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

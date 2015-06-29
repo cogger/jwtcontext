@@ -1,4 +1,4 @@
-package jwtcontext_test
+package jwtcontext
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -10,8 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cogger/jwtcontext"
-	"github.com/dgrijalva/jwt-go"
+	jwt "github.com/dgrijalva/jwt-go"
 	"golang.org/x/net/context"
 )
 
@@ -42,7 +41,7 @@ func jwtTestContext(email string) func(context.Context, *http.Request) context.C
 		Email: email,
 	})
 
-	return jwtcontext.Add(jwtTestServer{
+	return Add(jwtTestServer{
 		user: data,
 	})
 }
